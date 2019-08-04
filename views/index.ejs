@@ -1,0 +1,12 @@
+<h1> Movies </h1>
+
+<% movies.forEach(function(movie){ %>
+
+	<div>	
+		<h3><%= movie.name %></h3>
+		<img src = "<%= movie.image %>">
+		<h5> <%= movie.summary %> </h5>
+	</div>
+
+<a href="/movies/new">Add a movie</a>
+<% }); %>
